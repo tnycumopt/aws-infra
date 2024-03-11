@@ -30,7 +30,7 @@ jobs:
         # The snyk.sarif file won't be accessible in the next step without this "with" section, see
         # https://github.com/orgs/community/discussions/44329#discussioncomment-6886884
         with:
-          file: . (This should be the paths in which to scan files with issues.)
+          file: dev backend modules
           sarif: true
       - name: Upload result to GitHub Code Scanning
         uses: github/codeql-action/upload-sarif@v3
